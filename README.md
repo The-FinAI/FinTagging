@@ -60,93 +60,149 @@ We trained **Fino1** using a two-stage pipeline:
 
 ## 📊 Key Performance Metrics
 
-<table>
-  <caption><strong>Table: Overall Performance</strong><br>
-  <em>🥇 = best, 🥈 = second-best, 🥉 = third-best</em>
-  </caption>
-  <thead>
-    <tr>
-      <th>Category</th>
-      <th>Models</th>
-      <th>Macro P</th>
-      <th>Macro R</th>
-      <th>Macro F1</th>
-      <th>Micro P</th>
-      <th>Micro R</th>
-      <th>Micro F1</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Closed-source LLM</td>
-      <td>GPT-4o</td>
-      <td>0.0764 🥈</td>
-      <td>0.0576 🥈</td>
-      <td>0.0508 🥈</td>
-      <td>0.0947</td>
-      <td>0.0788</td>
-      <td>0.0860</td>
-    </tr>
-    <tr>
-      <td rowspan="8">Open-source LLMs</td>
-      <td>DeepSeek-V3</td>
-      <td>0.0813 🥇</td>
-      <td>0.0696 🥇</td>
-      <td>0.0582 🥇</td>
-      <td>0.1058</td>
-      <td>0.1217 🥉</td>
-      <td>0.1132 🥉</td>
-    </tr>
-    <tr>
-      <td>DeepSeek-R1-Distill-Qwen-32B</td>
-      <td>0.0482 🥉</td>
-      <td>0.0288 🥉</td>
-      <td>0.0266 🥉</td>
-      <td>0.0692</td>
-      <td>0.0223</td>
-      <td>0.0337</td>
-    </tr>
-    <!-- 示例中省略中间模型，可继续填写 -->
-    <tr>
-      <td>Financial LLM</td>
-      <td>Fino1-8B</td>
-      <td>0.0299</td>
-      <td>0.0146</td>
-      <td>0.0140</td>
-      <td>0.0355</td>
-      <td>0.0133</td>
-      <td>0.0193</td>
-    </tr>
-    <tr>
-      <td rowspan="3">Fine-tuned PLMs</td>
-      <td>BERT-large</td>
-      <td>0.0135</td>
-      <td>0.0200</td>
-      <td>0.0126</td>
-      <td>0.1397 🥈</td>
-      <td>0.1145 🥈</td>
-      <td>0.1259 🥈</td>
-    </tr>
-    <tr>
-      <td>FinBERT</td>
-      <td>0.0088</td>
-      <td>0.0143</td>
-      <td>0.0087</td>
-      <td>0.1293 🥉</td>
-      <td>0.0963</td>
-      <td>0.1104</td>
-    </tr>
-    <tr>
-      <td>SECBERT</td>
-      <td>0.0308</td>
-      <td>0.0483</td>
-      <td>0.0331</td>
-      <td>0.2144 🥇</td>
-      <td>0.2146 🥇</td>
-      <td>0.2145 🥇</td>
-    </tr>
-  </tbody>
+<div style="font-size: 12px; overflow-x: auto; width: 100%;">
+  <table>
+    <caption><strong>Table: Overall Performance</strong><br>
+    <em>🥇 = best, 🥈 = second-best, 🥉 = third-best</em>
+    </caption>
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Models</th>
+        <th>Macro P</th>
+        <th>Macro R</th>
+        <th>Macro F1</th>
+        <th>Micro P</th>
+        <th>Micro R</th>
+        <th>Micro F1</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Closed-source LLM</td>
+        <td>GPT-4o</td>
+        <td>0.0764 🥈</td>
+        <td>0.0576 🥈</td>
+        <td>0.0508 🥈</td>
+        <td>0.0947</td>
+        <td>0.0788</td>
+        <td>0.0860</td>
+      </tr>
+      <tr>
+        <td rowspan="8">Open-source LLMs</td>
+        <td>DeepSeek-V3</td>
+        <td>0.0813 🥇</td>
+        <td>0.0696 🥇</td>
+        <td>0.0582 🥇</td>
+        <td>0.1058</td>
+        <td>0.1217 🥉</td>
+        <td>0.1132 🥉</td>
+      </tr>
+      <tr>
+        <td>DeepSeek-R1-Distill-Qwen-32B</td>
+        <td>0.0482 🥉</td>
+        <td>0.0288 🥉</td>
+        <td>0.0266 🥉</td>
+        <td>0.0692</td>
+        <td>0.0223</td>
+        <td>0.0337</td>
+      </tr>
+      <tr>
+        <td>Qwen2.5-14B-Instruct</td>
+        <td>0.0423</td>
+        <td>0.0256</td>
+        <td>0.0235</td>
+        <td>0.0197</td>
+        <td>0.0133</td>
+        <td>0.0159</td>
+      </tr>
+      <tr>
+        <td>gemma-2-27b-it</td>
+        <td>0.0430</td>
+        <td>0.0273</td>
+        <td>0.0254</td>
+        <td>0.0519</td>
+        <td>0.0453</td>
+        <td>0.0483</td>
+      </tr>
+      <tr>
+        <td>Llama-3.1-8B-Instruct</td>
+        <td>0.0287</td>
+        <td>0.0152</td>
+        <td>0.0137</td>
+        <td>0.0462</td>
+        <td>0.0154</td>
+        <td>0.0231</td>
+      </tr>
+      <tr>
+        <td>Llama-3.2-3B-Instruct</td>
+        <td>0.0182</td>
+        <td>0.0109</td>
+        <td>0.0083</td>
+        <td>0.0151</td>
+        <td>0.0102</td>
+        <td>0.0121</td>
+      </tr>
+      <tr>
+        <td>Qwen2.5-1.5B-Instruct</td>
+        <td>0.0180</td>
+        <td>0.0079</td>
+        <td>0.0069</td>
+        <td>0.0248</td>
+        <td>0.0060</td>
+        <td>0.0096</td>
+      </tr>
+      <tr>
+        <td>Qwen2.5-0.5B-Instruct</td>
+        <td>0.0014</td>
+        <td>0.0003</td>
+        <td>0.0004</td>
+        <td>0.0047</td>
+        <td>0.0001</td>
+        <td>0.0002</td>
+      </tr>
+      <tr>
+        <td>Financial LLM</td>
+        <td>Fino1-8B</td>
+        <td>0.0299</td>
+        <td>0.0146</td>
+        <td>0.0140</td>
+        <td>0.0355</td>
+        <td>0.0133</td>
+        <td>0.0193</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Fine-tuned PLMs</td>
+        <td>BERT-large</td>
+        <td>0.0135</td>
+        <td>0.0200</td>
+        <td>0.0126</td>
+        <td>0.1397 🥈</td>
+        <td>0.1145 🥈</td>
+        <td>0.1259 🥈</td>
+      </tr>
+      <tr>
+        <td>FinBERT</td>
+        <td>0.0088</td>
+        <td>0.0143</td>
+        <td>0.0087</td>
+        <td>0.1293 🥉</td>
+        <td>0.0963</td>
+        <td>0.1104</td>
+      </tr>
+      <tr>
+        <td>SECBERT</td>
+        <td>0.0308</td>
+        <td>0.0483</td>
+        <td>0.0331</td>
+        <td>0.2144 🥇</td>
+        <td>0.2146 🥇</td>
+        <td>0.2145 🥇</td>
+      </tr>
+    </tbody>
 </table>
+</div>
+
 
 
 ---
