@@ -22,6 +22,7 @@ In this paper, we release two subtask evaluation datasets along with the origina
 | **[FinNI-eval](https://huggingface.co/datasets/TheFinAI/FinNI-eval)** | FinNI-eval is the evaluation dataset designed for the FinNI subtask within the FinTagging benchmark. |
 | **[FinCL-eval](https://huggingface.co/datasets/TheFinAI/FinCL-eval)** | FinCL-eval is the evaluation dataset designed for the FinCL subtask within the FinTagging benchmark. |
 | **[Benchmark Data](https://github.com/The-FinAI/FinTagging/blob/main/annotation/)** | final_simple_annotation_benchmark.json is our original benchmark dataset without any preprocessing, intended for custom use by researchers. |
+| **[Benchmark Data](https://github.com/The-FinAI/FinTagging/blob/main/annotation/)** | final_simple_annotation_benchmark.json is our original benchmark dataset without any preprocessing, intended for custom use by researchers. |
 
 ### 🏆 Models Evaluated
 We compared our Fino1 model against 16 state-of-the-art large language models (LLMs).
