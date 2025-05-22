@@ -15,12 +15,12 @@
 ## 📈 Overview
 
 ### 📂 Datasets Used
-Here, we utilized three evaluation datasets to assess the performance of our Fino1 model.
+In this paper, we release two subtask evaluation datasets along with the original benchmark dataset.
 
 | Dataset | Description |
 |---------|-------------|
-| **[FinQA](https://huggingface.co/datasets/TheFinAI/FINQA_test_test)** | FinQA is a large-scale dataset for numerical reasoning in finance, featuring expert-annotated QA pairs that require integrating structured and unstructured data from financial reports while handling complex domain-specific terminology. |
-| **[DocMath](https://huggingface.co/datasets/yale-nlp/DocMath-Eval)** | DocMath-Eval(Simplong; Complong) is a benchmark for evaluating LLMs' numerical reasoning over long specialized documents and tables, with the complong subset focusing on reasoning across multi-tiered financial or specialized tables within extended contexts. |
+| **[FinNI-eval](https://huggingface.co/datasets/TheFinAI/FinNI-eval)** | FinQA is a large-scale dataset for numerical reasoning in finance, featuring expert-annotated QA pairs that require integrating structured and unstructured data from financial reports while handling complex domain-specific terminology. |
+| **[FinCL-eval](https://huggingface.co/datasets/TheFinAI/FinCL-eval)** | DocMath-Eval(Simplong; Complong) is a benchmark for evaluating LLMs' numerical reasoning over long specialized documents and tables, with the complong subset focusing on reasoning across multi-tiered financial or specialized tables within extended contexts. |
 | **[XBRL-Math](https://huggingface.co/datasets/TheFinAI/Regulation_XBRL_FinMath_test)** | XBRL-Math dataset evaluates LLMs' numerical reasoning in XBRL filings, requiring models to interpret structured financial data, US GAAP XBRL tags, equations, and hierarchical numerical relationships for accurate financial analysis. |
 
 ### 🏆 Models Evaluated
