@@ -3,7 +3,7 @@
 <h1 align="center">🚀 FinTagging: An LLM-ready Benchmark for Extracting and Structuring Financial Information</h1>
 
 <p align="center">
-  <a href="https://github.com/The-FinAI/FinTagging/blob/main/annotation/">🤗 Benchmark Data</a> |
+  <a href="https://huggingface.co/datasets/TheFinAI/FinTagging_Original">🤗 Benchmark Data</a> |
   <a href>📄 Arxiv</a> |
   <a href="https://github.com/Yan2266336/FinBen">🤖 Evaluation Framework</a>
 <!--   <a href="https://huggingface.co/TheFinAI/Fin-o1-14B">🤖 14B-Model</a> -->
@@ -21,8 +21,8 @@ In this paper, we release two subtask evaluation datasets along with the origina
 |---------|-------------|
 | **[FinNI-eval](https://huggingface.co/datasets/TheFinAI/FinNI-eval)** | FinNI-eval is the evaluation dataset designed for the FinNI subtask within the FinTagging benchmark. |
 | **[FinCL-eval](https://huggingface.co/datasets/TheFinAI/FinCL-eval)** | FinCL-eval is the evaluation dataset designed for the FinCL subtask within the FinTagging benchmark. |
-| **[Benchmark Data](https://github.com/The-FinAI/FinTagging/blob/main/annotation/)** | benchmark_ground_truth_pipeline.json is our original benchmark dataset without any preprocessing, intended for custom use by researchers. |
-| **[Benchmark Data](https://github.com/The-FinAI/FinTagging/blob/main/annotation/)** | final_simple_annotation_benchmark.json is our original benchmark dataset without any preprocessing, intended for custom use by researchers. |
+| **[FinTagging_Original](https://huggingface.co/datasets/TheFinAI/FinTagging_Original)** | FinTagging_Original is our original benchmark dataset without any preprocessing, intended for custom use by researchers. To facilitate the use of our dataset by researchers, we also provide the annotated data in JSON format within the "annotation" folder.|
+| **[FinTagging_BIO](https://huggingface.co/datasets/TheFinAI/FinTagging_BIO)** | FinTagging_BIO is tailored for BERT-series models which use the BIO scheme to predict US-GAAP tags for tokens in sentence. |
 
 ### 🏆 Models Evaluated
 We compared our Fino1 model against 16 state-of-the-art large language models (LLMs).
