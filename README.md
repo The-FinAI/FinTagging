@@ -23,16 +23,17 @@
 ## 🧑‍💻 Evaluated LLMs and PLMs
 We benchmarked **FinTagging** alongside 10 cutting-edge LLMs and 3 advanced PTMs:
 
-- 🔥 [GPT-4o](https://platform.openai.com/docs/models#gpt-4o)
-- 🚀 [DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3)
-- 🧠 [Qwen2.5 Series](https://huggingface.co/Qwen)
-- 📌 [Llama-3 Series](https://huggingface.co/meta-llama)
-- 📐 [DeepSeek-R1 Series](https://huggingface.co/deepseek-ai)
-- 💡 [Gemma-2 Model](https://huggingface.co/google/gemma-2-27b-it)
-- 💰 [Fino1-8B](https://huggingface.co/TheFinAI/Fino1-8B)
-- 🏛️ [BERT-large](https://huggingface.co/google-bert/bert-large-uncased)
-- 📉 [FinBERT](https://huggingface.co/ProsusAI/finbert)
-- 🧾 [SECBERT](https://huggingface.co/nlpaueb/sec-bert-base)
+- 🌐 **[GPT-4o](https://platform.openai.com/docs/models#gpt-4o)** — OpenAI’s multimodal flagship model with structured output support.
+- 🚀 **[DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3)** — A MoE reasoning model with efficient inference via MLA.
+- 🧠 **[Qwen2.5 Series](https://huggingface.co/Qwen)** — Multilingual models optimized for reasoning, coding, and math. Here, we assessed 14B, 1.5B, and 0.8B Instruct models.
+- 🦙 **[Llama-3 Series](https://huggingface.co/meta-llama)** — Meta’s open-source instruction-tuned models for long context. Here, we assessed the Llama-3.1-8B-Instruct and Llama-3.2-3B-Instruct models.
+- 🧭 **[DeepSeek-R1 Series](https://huggingface.co/deepseek-ai)** — RL-tuned first-gen reasoning models with zero-shot strength. Here, we only assessed the DeepSeek-R1-Distill-Qwen-32B model.
+- 🧪 **[Gemma-2 Model](https://huggingface.co/google/gemma-2-27b-it)** — Google’s latest instruction-tuned model with open weights. Here, we only assess the gemma-2-27b-it model.
+- 💎 **[Fino1-8B](https://huggingface.co/TheFinAI/Fino1-8B)** — Our in-house financial LLM with strong reasoning capability.
+- 🏛️ **[BERT-large](https://huggingface.co/google-bert/bert-large-uncased)** — The classic transformer encoder for language understanding.
+- 📉 **[FinBERT](https://huggingface.co/ProsusAI/finbert)** — A financial domain-tuned BERT for sentiment analysis.
+- 🧾 **[SECBERT](https://huggingface.co/nlpaueb/sec-bert-base)** — BERT model fine-tuned on SEC filings for financial disclosure tasks.
+
 
 ---
 
