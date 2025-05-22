@@ -20,19 +20,19 @@
 
 ---
 
-## 🧑‍💻 Evaluated LLMs
-We benchmarked **Fino1** alongside 16 cutting-edge LLMs:
+## 🧑‍💻 Evaluated LLMs and PLMs
+We benchmarked **FinTagging** alongside 10 cutting-edge LLMs and 3 advanced PTMs:
 
 - 🔥 [GPT-4o](https://platform.openai.com/docs/models#gpt-4o)
-- 🔥 [GPT-o1](https://platform.openai.com/docs/models#o1)
 - 🚀 [DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3)
 - 🧠 [Qwen2.5 Series](https://huggingface.co/Qwen)
 - 📌 [Llama-3 Series](https://huggingface.co/meta-llama)
 - 📐 [DeepSeek-R1 Series](https://huggingface.co/deepseek-ai)
-- 💡 [QwQ Reasoning Models](https://huggingface.co/Qwen/QwQ-32B)
-- 📊 [LIMO](https://huggingface.co/GAIR/LIMO)
-- ⚙️ [s1-32B](https://huggingface.co/simplescaling/s1-32B)
-- 💰 [FinR1-7B](https://huggingface.co/SUFE-AIFLM-Lab/Fin-R1)
+- 💡 [Gemma-2 Model](https://huggingface.co/google/gemma-2-27b-it)
+- 💰 [Fino1-8B](https://huggingface.co/TheFinAI/Fino1-8B)
+- 🏛️ [BERT-large](https://huggingface.co/google-bert/bert-large-uncased)
+- 📉 [FinBERT](https://huggingface.co/ProsusAI/finbert)
+- 🧾 [SECBERT](https://huggingface.co/nlpaueb/sec-bert-base)
 
 ---
 
