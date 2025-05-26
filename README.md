@@ -37,22 +37,9 @@ We benchmarked **FinTagging** alongside 10 cutting-edge LLMs and 3 advanced PTMs
 
 ---
 
-## 🎨 Reasoning Path Construction
-Inspired by [HuatuoGPT-o1](https://github.com/FreedomIntelligence/HuatuoGPT-o1), we provide reasoning paths:
-- [**FinCoT**](https://huggingface.co/datasets/TheFinAI/FinCoT)
-
----
-
-## 🚧 Model Training
-We trained **Fino1** using a two-stage pipeline:
-
-1. **🔧 Stage 1 (SFT):** See [HuatuoGPT-o1](https://github.com/FreedomIntelligence/HuatuoGPT-o1).
-2. **⚙️ Stage 2 (RL - GRPO):** See [open-r1](https://github.com/huggingface/open-r1.git).
-
----
-
 ## 📌 Evaluation Methodology
 - **Local Model Inference:** Conducted via [FinBen](https://github.com/The-FinAI/FinBen) (VLLM framework).
+- However, we provided the specific evaluation scripts on the forked FinBen Framework at https://github.com/Yan2266336/FinBen
 - **API-based Model Inference:** Conducted via `query_llm.py` script.
 - **Answer Extraction and Evaluation:** Using [DocMath-Eval](https://github.com/yale-nlp/DocMath-Eval).
 
@@ -204,13 +191,6 @@ We trained **Fino1** using a two-stage pipeline:
 </div>
 
 
-
----
-
-## 🗓️ Latest Updates
-
-- **2025-03-30:** 🚀 **Fino1-14B** trained & evaluated.
-- **2025-02-12:** 🚀 **Fino1-8B** trained & evaluated.
 
 ---
 
