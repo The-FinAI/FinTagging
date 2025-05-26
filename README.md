@@ -39,9 +39,10 @@ We benchmarked **FinTagging** alongside 10 cutting-edge LLMs and 3 advanced PTMs
 
 ## 📌 Evaluation Methodology
 - **Local Model Inference:** Conducted via [FinBen](https://github.com/The-FinAI/FinBen) (VLLM framework).
-- However, we provided the specific evaluation scripts on the forked FinBen Framework at https://github.com/Yan2266336/FinBen
-- **API-based Model Inference:** Conducted via `query_llm.py` script.
-- **Answer Extraction and Evaluation:** Using [DocMath-Eval](https://github.com/yale-nlp/DocMath-Eval).
+- We provide task-specific evaluation scripts through our forked version of the FinBen framework, available at: https://github.com/Yan2266336/FinBen.
+- For the FinNI task, you can directly execute the provided script to evaluate a variety of LLMs, including both local and API-based models.
+- For the FinCL task, first run the retrieval script from the repository to obtain US-GAAP candidate concepts. Then, use our provided prompts to construct instruction-style inputs, and apply the reranking method implemented in the forked FinBen to identify the most appropriate US-GAAP concept.
+- **Note**: Running the retrieval script requires a local installation of Elasticsearch.
 
 ---
 
