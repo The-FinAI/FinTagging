@@ -48,7 +48,7 @@ We benchmarked **FinTagging** alongside 10 cutting-edge LLMs and 3 advanced PTMs
 
 ## 📊 Key Performance Metrics
 
-<div style="font-size: 12px; overflow-x: auto; width: 100%;">
+<div style="font-size: 10px; overflow-x: auto; width: 100%;">
   <table>
     <caption><strong>Table: Overall Performance</strong><br>
     <em>🥇 = best, 🥈 = second-best, 🥉 = third-best</em>
