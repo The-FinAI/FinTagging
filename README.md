@@ -2,7 +2,7 @@
 <h1 align="center">✨ FinTagging: An LLM-ready Benchmark for Extracting and Structuring Financial Information ✨</h1>
 
 <p align="center">
-  📁 <a href="https://huggingface.co/datasets/TheFinAI/FinTagging_Original">Benchmark Data</a> | 📖 <a href="#">Arxiv</a> | 🛠️ <a href="https://github.com/Yan2266336/FinBen">Evaluation Framework</a>
+  📁 <a href="https://huggingface.co/datasets/TheFinAI/FinTagging_Original">Benchmark Data</a> | 📖 <a href="#">Arxiv</a> | 🛠️ <a href="https://github.com/The-FinAI/FinBen">Evaluation Framework</a>
 </p>
 
 ---
