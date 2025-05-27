@@ -200,12 +200,4 @@ We benchmarked **FinTagging** alongside 10 cutting-edge LLMs and 3 advanced PTMs
 If you find our benchmark useful, please cite:
 
 ```bibtex
-@misc{qian2025fino1transferabilityreasoningenhanced,
-      title={Fino1: On the Transferability of Reasoning Enhanced LLMs to Finance}, 
-      author={Lingfei Qian and Weipeng Zhou and Yan Wang and Xueqing Peng and Jimin Huang and Qianqian Xie},
-      year={2025},
-      eprint={2502.08127},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2502.08127}, 
-}
+
