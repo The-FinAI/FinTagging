@@ -200,4 +200,12 @@ We benchmarked **FinTagging** alongside 10 cutting-edge LLMs and 3 advanced PTMs
 If you find our benchmark useful, please cite:
 
 ```bibtex
-
+@misc{wang2025fintaggingllmreadybenchmarkextracting,
+      title={FinTagging: An LLM-ready Benchmark for Extracting and Structuring Financial Information}, 
+      author={Yan Wang and Yang Ren and Lingfei Qian and Xueqing Peng and Keyi Wang and Yi Han and Dongji Feng and Xiao-Yang Liu and Jimin Huang and Qianqian Xie},
+      year={2025},
+      eprint={2505.20650},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2505.20650}, 
+}
