@@ -21,7 +21,7 @@
 ---
 
 ## 🧑‍💻 Evaluated LLMs and PLMs
-We benchmarked **FinTagging** alongside 10 cutting-edge LLMs and 3 advanced PTMs:
+We benchmarked **FinTagging** alongside 10 cutting-edge LLMs and 3 advanced PLMs:
 
 - 🌐 **[GPT-4o](https://platform.openai.com/docs/models#gpt-4o)** — OpenAI’s multimodal flagship model with structured output support.
 - 🚀 **[DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3)** — A MoE reasoning model with efficient inference via MLA.
