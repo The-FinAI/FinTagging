@@ -194,6 +194,90 @@ We benchmarked **FinTagging** alongside 10 cutting-edge LLMs and 3 advanced PLMs
 
 
 
+<div style="font-size: 10px; overflow-x: auto; width: 100%;">
+  <table>
+    <caption><strong>Table: The FinNI Task Performance</strong><br>
+    <em>🥇 = best, 🥈 = second-best, 🥉 = third-best</em>
+    </caption>
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Models</th>
+        <th>Precision</th>
+        <th>Recall</th>
+        <th>F1</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Closed-source LLM</td>
+        <td>GPT-4o</td>
+        <td>0.6105 🥈</td>
+        <td>0.5941 🥈</td>
+        <td>0.6022 🥈</td>
+      </tr>
+      <tr>
+        <td rowspan="8">Open-source LLMs</td>
+        <td>DeepSeek-V3</td>
+        <td>0.6329 🥇</td>
+        <td>0.8452 🥇</td>
+        <td>0.7238 🥇</td>
+      </tr>
+      <tr>
+        <td>DeepSeek-R1-Distill-Qwen-32B</td>
+        <td>0.5490 🥉</td>
+        <td>0.2238 🥉</td>
+        <td>0.3180 🥉</td>
+      </tr>
+      <tr>
+        <td>Qwen2.5-14B-Instruct</td>
+        <td>0.3632</td>
+        <td>0.0018</td>
+        <td>0.0035</td>
+      </tr>
+      <tr>
+        <td>gemma-2-27b-it</td>
+        <td>0.5319</td>
+        <td>0.5490 🥉</td>
+        <td>0.5403 🥉</td>
+      </tr>
+      <tr>
+        <td>Llama-3.1-8B-Instruct</td>
+        <td>0.3346</td>
+        <td>0.1746</td>
+        <td>0.2295</td>
+      </tr>
+      <tr>
+        <td>Llama-3.2-3B-Instruct</td>
+        <td>0.1887</td>
+        <td>0.1794</td>
+        <td>0.1839</td>
+      </tr>
+      <tr>
+        <td>Qwen2.5-1.5B-Instruct</td>
+        <td>0.1323</td>
+        <td>0.0636</td>
+        <td>0.0859</td>
+      </tr>
+      <tr>
+        <td>Qwen2.5-0.5B-Instruct</td>
+        <td>0.0116</td>
+        <td>0.0027</td>
+        <td>0.0043</td>
+      </tr>
+      <tr>
+        <td>Financial LLM</td>
+        <td>Fino1-8B</td>
+        <td>0.3416</td>
+        <td>0.1481</td>
+        <td>0.2066</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
 ---
 
 ## 📖 Citation
