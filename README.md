@@ -18,6 +18,7 @@
 | [**FinTagging_Original**](https://huggingface.co/datasets/TheFinAI/FinTagging_Original) | Original benchmark dataset without preprocessing, suitable for custom research. Annotated data (`benchmark_ground_truth_pipeline.json`) provided in the "annotation" folder. |
 | [**FinTagging_BIO**](https://huggingface.co/datasets/TheFinAI/FinTagging_BIO) | BIO-format dataset tailored for token-level tagging with BERT-series models. We also provided this data in the "BERT/data" folder under the name "test_data_benchmark.bio".|
 | [**FinTagging_Trainset**](https://github.com/The-FinAI/FinTagging/blob/main/annotation/TrainingSet_Annotation.json) | The training set for the BERT-series models is provided in two formats: the JSON format, located in the "annotation" folder under the name "TrainingSet_Annotation.json," and the BIO format, located in the "BERT/data" folder under the name "train_data_all.bio". |
+| [**FinTagging_Subset**](https://github.com/The-FinAI/FinTagging/blob/main/annotation/TrainingSet_Annotation.json) | The training set for the BERT-series models is provided in two formats: the JSON format, located in the "annotation" folder under the name "TrainingSet_Annotation.json," and the BIO format, located in the "BERT/data" folder under the name "train_data_all.bio". |
 
 ---
 
