@@ -17,6 +17,7 @@
 | [**FinCL-eval**](https://huggingface.co/datasets/TheFinAI/FinCL-eval) | Evaluation set for FinCL subtask within FinTagging benchmark. |
 | [**FinTagging_Original**](https://huggingface.co/datasets/TheFinAI/FinTagging_Original) | Original benchmark dataset without preprocessing, suitable for custom research. Annotated data (`benchmark_ground_truth_pipeline.json`) provided in the "annotation" folder. |
 | [**FinTagging_BIO**](https://huggingface.co/datasets/TheFinAI/FinTagging_BIO) | BIO-format dataset tailored for token-level tagging with BERT-series models. |
+| [**FinTagging_Trainset**](https://huggingface.co/datasets/TheFinAI/FinTagging_BIO) | BIO-format dataset tailored for token-level tagging with BERT-series models. |
 
 ---
 
