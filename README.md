@@ -193,7 +193,7 @@ We benchmarked **FinTagging** alongside 10 cutting-edge LLMs and 3 advanced PLMs
 </div>
 
 
-## ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 <div style="font-size: 10px; overflow-x: auto; width: 100%;">
   <table>
@@ -278,7 +278,7 @@ We benchmarked **FinTagging** alongside 10 cutting-edge LLMs and 3 advanced PLMs
 </div>
 
 
-## ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 <div style="font-size: 10px; overflow-x: auto; width: 100%;">
   <table>
