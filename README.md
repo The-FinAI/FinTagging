@@ -277,6 +277,68 @@ We benchmarked **FinTagging** alongside 10 cutting-edge LLMs and 3 advanced PLMs
 </div>
 
 
+## 📊 Key Performance Metrics
+
+<div style="font-size: 10px; overflow-x: auto; width: 100%;">
+  <table>
+    <caption><strong>Table: The FinCL Task Performance</strong><br>
+    <em>🥇 = best, 🥈 = second-best, 🥉 = third-best</em>
+    </caption>
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Models</th>
+        <th>Accuracy</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Closed-source LLM</td>
+        <td>GPT-4o</td>
+        <td>0.1664 🥈</td>
+      </tr>
+      <tr>
+        <td rowspan="8">Open-source LLMs</td>
+        <td>DeepSeek-V3</td>
+        <td>0.1715 🥇</td>
+      </tr>
+      <tr>
+        <td>DeepSeek-R1-Distill-Qwen-32B</td>
+        <td>0.1013</td>
+      </tr>
+      <tr>
+        <td>Qwen2.5-14B-Instruct</td>
+        <td>0.1072 🥉</td>
+      </tr>
+      <tr>
+        <td>gemma-2-27b-it</td>
+        <td>0.1009</td>
+      </tr>
+      <tr>
+        <td>Llama-3.1-8B-Instruct</td>
+        <td>0.0807</td>
+      </tr>
+      <tr>
+        <td>Llama-3.2-3B-Instruct</td>
+        <td>0.0375</td>
+      </tr>
+      <tr>
+        <td>Qwen2.5-1.5B-Instruct</td>
+        <td>0.0419</td>
+      </tr>
+      <tr>
+        <td>Qwen2.5-0.5B-Instruct</td>
+        <td>0.0246</td>
+      </tr>
+      <tr>
+        <td>Financial LLM</td>
+        <td>Fino1-8B</td>
+        <td>0.0704</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 
 ---
 
