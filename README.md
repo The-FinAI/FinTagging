@@ -2,7 +2,7 @@
 <h1 align="center">✨ FinTagging: An LLM-ready Benchmark for Extracting and Structuring Financial Information ✨</h1>
 
 <p align="center">
-  📁 <a href="https://huggingface.co/datasets/TheFinAI/FinTagging_Original">Benchmark Data</a> | 📖 <a href="https://arxiv.org/abs/2505.20650">Arxiv</a> | 🛠️ <a href="https://github.com/The-FinAI/FinBen">Evaluation Framework</a>
+  📁 <a href="https://huggingface.co/collections/TheFinAI/fintagging-68270132372c6608ac069bef">Benchmark Data</a> | 📖 <a href="https://arxiv.org/abs/2505.20650">Arxiv</a> | 🛠️ <a href="https://github.com/The-FinAI/FinBen">Evaluation Framework</a>
 </p>
 
 ---
@@ -16,7 +16,7 @@
 | [**FinNI-eval**](https://huggingface.co/datasets/TheFinAI/FinNI-eval) | Evaluation set for FinNI subtask within FinTagging benchmark. |
 | [**FinCL-eval**](https://huggingface.co/datasets/TheFinAI/FinCL-eval) | Evaluation set for FinCL subtask within FinTagging benchmark. |
 | [**FinTagging_Original**](https://huggingface.co/datasets/TheFinAI/FinTagging_Original) | Original benchmark dataset without preprocessing, suitable for custom research. Annotated data (`benchmark_ground_truth_pipeline.json`) provided in the "annotation" folder. |
-| [**FinTagging_BIO**](https://huggingface.co/datasets/TheFinAI/FinTagging_BIO) | BIO-format dataset tailored for token-level tagging with BERT-series models. We also provided this data in the "BERT/data" folder under the name "benchmark_data.bio".|
+| [**FinTagging_BIO**](https://huggingface.co/datasets/TheFinAI/FinTagging_BIO) | BIO-format dataset tailored for token-level tagging with BERT-series models. We also provided this data in the "BERT/data" folder under the name "test_data_benchmark.bio".|
 | [**FinTagging_Trainset**](https://github.com/The-FinAI/FinTagging/blob/main/annotation/TrainingSet_Annotation.json) | The training set for the BERT-series models is provided in two formats: the JSON format, located in the "annotation" folder under the name "TrainingSet_Annotation.json," and the BIO format, located in the "BERT/data" folder under the name "train_data_all.bio". |
 
 ---
