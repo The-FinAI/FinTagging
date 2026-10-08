@@ -1,55 +1,79 @@
-<!-- Title -->
-<h1 align="center">✨ FinTagging: An LLM-ready Benchmark for Extracting and Structuring Financial Information ✨</h1>
+<div align="center">
 
-<p align="center">
-  📁 <a href="https://huggingface.co/collections/TheFinAI/fintagging-68270132372c6608ac069bef">Benchmark Data</a> | 📖 <a href="https://arxiv.org/abs/2505.20650">Arxiv</a> | 🛠️ <a href="https://github.com/The-FinAI/FinBen">Evaluation Framework</a>
+<h1>FinTagging</h1>
+
+<p><strong>Benchmarking LLMs for Extracting and Structuring Financial Information</strong></p>
+
+<p>
+  <a href="https://arxiv.org/abs/2505.20650"><img src="https://img.shields.io/badge/arXiv-2505.20650-b31b1b.svg" alt="arXiv"></a>
+  <a href="https://huggingface.co/collections/TheFinAI/fintagging-xbrl-tagging-68270132372c6608ac069bef"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Collection-yellow?logo=huggingface" alt="Hugging Face Collection"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>
 </p>
 
----
+<p>
+  <a href="https://arxiv.org/abs/2505.20650">Paper</a> ·
+  <a href="https://huggingface.co/collections/TheFinAI/fintagging-xbrl-tagging-68270132372c6608ac069bef">Data</a> ·
+  <a href="https://github.com/The-FinAI/FinBen">Evaluation Framework</a>
+</p>
 
-## 🌟 Overview
-
-### 📚 Datasets Released
-
-| 📂 Dataset | 📝 Description |
-|------------|----------------|
-| [**FinNI-eval**](https://huggingface.co/datasets/TheFinAI/FinNI-eval) | Evaluation set for FinNI subtask within FinTagging benchmark. |
-| [**FinCL-eval**](https://huggingface.co/datasets/TheFinAI/FinCL-eval) | Evaluation set for FinCL subtask within FinTagging benchmark. |
-| [**FinTagging_Original**](https://huggingface.co/datasets/TheFinAI/FinTagging_Original) | Original benchmark dataset without preprocessing, suitable for custom research. Annotated data (`benchmark_ground_truth_pipeline.json`) provided in the "annotation" folder. |
-| [**FinTagging_BIO**](https://huggingface.co/datasets/TheFinAI/FinTagging_BIO) | BIO-format dataset tailored for token-level tagging with BERT-series models. We also provided this data in the "BERT/data" folder under the name "test_data_benchmark.bio".|
-| [**FinTagging_Trainset**](https://github.com/The-FinAI/FinTagging/blob/main/annotation/TrainingSet_Annotation.json) | The training set for the BERT-series models is provided in two formats: the JSON format, located in the "annotation" folder under the name "TrainingSet_Annotation.json," and the BIO format, located in the "BERT/data" folder under the name "train_data_all.bio". |
-| [**FinTagging_Subset**](https://github.com/The-FinAI/FinTagging/tree/main/subdata) | We provided subset for FinNI and FinCL tasks. |
+</div>
 
 ---
 
-## 🧑‍💻 Evaluated LLMs and PLMs
-We benchmarked **FinTagging** alongside 10 cutting-edge LLMs and 3 advanced PLMs:
+## Overview
 
-- 🌐 **[GPT-4o](https://platform.openai.com/docs/models#gpt-4o)** — OpenAI’s multimodal flagship model with structured output support.
-- 🚀 **[DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3)** — A MoE reasoning model with efficient inference via MLA.
-- 🧠 **[Qwen2.5 Series](https://huggingface.co/Qwen)** — Multilingual models optimized for reasoning, coding, and math. Here, we assessed 14B, 1.5B, and 0.8B Instruct models.
-- 🦙 **[Llama-3 Series](https://huggingface.co/meta-llama)** — Meta’s open-source instruction-tuned models for long context. Here, we assessed the Llama-3.1-8B-Instruct and Llama-3.2-3B-Instruct models.
-- 🧭 **[DeepSeek-R1 Series](https://huggingface.co/deepseek-ai)** — RL-tuned first-gen reasoning models with zero-shot strength. Here, we only assessed the DeepSeek-R1-Distill-Qwen-32B model.
-- 🧪 **[Gemma-2 Model](https://huggingface.co/google/gemma-2-27b-it)** — Google’s latest instruction-tuned model with open weights. Here, we only assess the gemma-2-27b-it model.
-- 💎 **[Fino1-8B](https://huggingface.co/TheFinAI/Fino1-8B)** — Our in-house financial LLM with strong reasoning capability.
-- 🏛️ **[BERT-large](https://huggingface.co/google-bert/bert-large-uncased)** — The classic transformer encoder for language understanding.
-- 📉 **[FinBERT](https://huggingface.co/ProsusAI/finbert)** — A financial domain-tuned BERT for sentiment analysis.
-- 🧾 **[SECBERT](https://huggingface.co/nlpaueb/sec-bert-base)** — BERT model fine-tuned on SEC filings for financial disclosure tasks.
+**FinTagging** is an LLM-ready benchmark for structure-aware, full-scope XBRL tagging: mapping the numerical facts in financial reports to concepts in the US-GAAP taxonomy. It decomposes tagging into two subtasks: **FinNI** (Financial Numeric Identification), which extracts numeric entities and their types from text and tables, and **FinCL** (Financial Concept Linking), which links each extracted entity to the full US-GAAP taxonomy. This repository contains the annotations, taxonomy files, retrieval and BERT baseline scripts, and the notebooks used to build and evaluate the benchmark.
 
+## Resources on Hugging Face
 
----
+All FinTagging data is collected in the [FinTagging Hugging Face collection](https://huggingface.co/collections/TheFinAI/fintagging-xbrl-tagging-68270132372c6608ac069bef).
 
-## 📌 Evaluation Methodology
-- **Local Model Inference:** Conducted via [FinBen](https://github.com/The-FinAI/FinBen) (VLLM framework).
-- We provide task-specific evaluation scripts through our forked version of the FinBen framework, available at: https://github.com/Yan2266336/FinBen.
-- For the FinNI task, you can directly execute the provided script to evaluate a variety of LLMs, including both local and API-based models.
-- For the FinCL task, first run the retrieval script from the repository to obtain US-GAAP candidate concepts. Then, use our provided prompts to construct instruction-style inputs, and apply the reranking method implemented in the forked FinBen to identify the most appropriate US-GAAP concept.
-- Taxonomy: We provided the original US-GAAP taxonomy file ("us-gaap-2024.xsd") as well as the processed taxonomy BM25 index document ("us_gaap_2024_BM25.jsonl") under the taxonomy folder.
-- **Note**: Running the retrieval script requires a local installation of Elasticsearch. We provided our embedding index document at Google Drive: https://drive.google.com/file/d/1cyMONjP9WdHtD8-WGezmgh_LNhbY3qtR/view?usp=drive_link. However, you can construct your own index document instead of using ours with the original US-GAAP taxonomy file.
+| Dataset | Description |
+|---------|-------------|
+| [**TheFinAI/en-finni-eval**](https://huggingface.co/datasets/TheFinAI/en-finni-eval) (formerly `FinNI-eval`) | Evaluation set for the FinNI subtask of the FinTagging benchmark. |
+| [**TheFinAI/en-fincl-eval**](https://huggingface.co/datasets/TheFinAI/en-fincl-eval) (formerly `FinCL-eval`) | Evaluation set for the FinCL subtask of the FinTagging benchmark. |
+| [**TheFinAI/en-fintagging-original**](https://huggingface.co/datasets/TheFinAI/en-fintagging-original) (formerly `FinTagging_Original`) | Original benchmark dataset without preprocessing, suitable for custom research. The annotated data (`benchmark_ground_truth_pipeline.json`) is provided in the [`annotation/`](annotation) folder. |
+| [**TheFinAI/en-fintagging-bio**](https://huggingface.co/datasets/TheFinAI/en-fintagging-bio) (formerly `FinTagging_BIO`) | BIO-format dataset tailored for token-level tagging with BERT-series models. The same data is provided in the [`BERT/data`](BERT/data) folder as `test_data_benchmark.bio`. |
 
----
+| Model | Description |
+|-------|-------------|
+| [**TheFinAI/Fino1-8B**](https://huggingface.co/TheFinAI/Fino1-8B) | Our in-house financial reasoning LLM, evaluated on FinTagging. |
 
-## 📊 Key Performance Metrics
+### Data in this repository
+
+| Data | Description |
+|------|-------------|
+| [**FinTagging_Trainset**](annotation/TrainingSet_Annotation.json) | Training set for the BERT-series models, provided in two formats: JSON (`annotation/TrainingSet_Annotation.json`) and BIO (`BERT/data/train_data_all.bio`). |
+| [**FinTagging_Subset**](subdata) | Subsets for the FinNI and FinCL tasks (`subdata/`). |
+| [**Taxonomy**](taxonomy) | The original US-GAAP taxonomy file (`us-gaap-2024.xsd`) and the processed taxonomy BM25 index document (`us_gaap_2024_BM25.jsonl`). |
+
+## Evaluated LLMs and PLMs
+
+We benchmarked **FinTagging** with 10 cutting-edge LLMs and 3 advanced PLMs:
+
+- **[GPT-4o](https://platform.openai.com/docs/models#gpt-4o)**: OpenAI's multimodal flagship model with structured output support.
+- **[DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3)**: a MoE reasoning model with efficient inference via MLA.
+- **[Qwen2.5 Series](https://huggingface.co/Qwen)**: multilingual models optimized for reasoning, coding, and math. We assessed the 14B, 1.5B, and 0.5B Instruct models.
+- **[Llama-3 Series](https://huggingface.co/meta-llama)**: Meta's open-source instruction-tuned models for long context. We assessed Llama-3.1-8B-Instruct and Llama-3.2-3B-Instruct.
+- **[DeepSeek-R1 Series](https://huggingface.co/deepseek-ai)**: RL-tuned first-generation reasoning models with zero-shot strength. We assessed DeepSeek-R1-Distill-Qwen-32B.
+- **[Gemma-2](https://huggingface.co/google/gemma-2-27b-it)**: Google's instruction-tuned model with open weights. We assessed gemma-2-27b-it.
+- **[Fino1-8B](https://huggingface.co/TheFinAI/Fino1-8B)**: our in-house financial LLM with strong reasoning capability.
+- **[BERT-large](https://huggingface.co/google-bert/bert-large-uncased)**: the classic transformer encoder for language understanding.
+- **[FinBERT](https://huggingface.co/ProsusAI/finbert)**: a financial domain-tuned BERT for sentiment analysis.
+- **[SECBERT](https://huggingface.co/nlpaueb/sec-bert-base)**: a BERT model trained on SEC filings for financial disclosure tasks.
+
+## Evaluation
+
+- **Local model inference** is run through [FinBen](https://github.com/The-FinAI/FinBen) (vLLM framework).
+- Task-specific evaluation scripts are provided in our fork of the FinBen framework: <https://github.com/Yan2266336/FinBen>.
+- **FinNI:** run the provided script directly to evaluate a variety of LLMs, including both local and API-based models.
+- **FinCL:** first run the retrieval script in this repository ([`retrieval/`](retrieval)) to obtain US-GAAP candidate concepts. Then use our prompts to construct instruction-style inputs, and apply the reranking method implemented in the forked FinBen to identify the most appropriate US-GAAP concept.
+- **Taxonomy:** the original US-GAAP taxonomy file (`us-gaap-2024.xsd`) and the processed taxonomy BM25 index document (`us_gaap_2024_BM25.jsonl`) are in the [`taxonomy/`](taxonomy) folder.
+
+> [!NOTE]
+> Running the retrieval script requires a local installation of Elasticsearch. Our embedding index document is available on [Google Drive](https://drive.google.com/file/d/1cyMONjP9WdHtD8-WGezmgh_LNhbY3qtR/view?usp=drive_link). You can also build your own index document from the original US-GAAP taxonomy file instead of using ours.
+
+## Results
 
 <div style="font-size: 10px; overflow-x: auto; width: 100%;">
   <table>
@@ -342,10 +366,7 @@ We benchmarked **FinTagging** alongside 10 cutting-edge LLMs and 3 advanced PLMs
   </table>
 </div>
 
-
----
-
-## 📖 Citation
+## Citation
 
 If you find our benchmark useful, please cite:
 
@@ -359,3 +380,12 @@ If you find our benchmark useful, please cite:
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2505.20650}, 
 }
+```
+
+## License
+
+The code in this repository is released under the [MIT License](LICENSE). Datasets and models on Hugging Face keep their own licenses, stated on each card.
+
+---
+
+<p align="center">Built by <a href="https://thefin.ai">The Fin AI</a> · <a href="https://huggingface.co/TheFinAI">Hugging Face</a> · <a href="https://github.com/The-FinAI">GitHub</a></p>
